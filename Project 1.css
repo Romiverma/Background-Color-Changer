@@ -1,0 +1,92 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    transition: background-color 0.4s ease;
+}
+
+.container {
+    width: 500px;
+    padding: 35px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#colorCode {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+h3 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.color-btn {
+    padding: 15px 10px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #222;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.color-btn span {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.color-btn:hover {
+    transform: scale(1.05);
+}
+
+#resetColor {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#resetColor:hover {
+    background-color: #555;
+}
+
+@media (max-width: 550px) {
+    .container {
+        width: 90%;
+        padding: 25px 15px;
+    }
+}
